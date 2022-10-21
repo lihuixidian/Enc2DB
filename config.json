@@ -1,0 +1,23 @@
+{
+    "common": {
+        "EnclavePath": "/etc/encryptsql/enclave.signed.so",
+        "PlainMasterKeyPath":"/etc/encryptsql/masterKey.plain",
+        "SealedMasterKeyPath":"/etc/encryptsql/masterKey.encrypted",
+        "LogPath":"/etc/encryptsql/encryptsql.log"
+    },
+    "user": {
+        "scaleSMHECipher": "2304161644590237861~1!3@1*0(0)0+0<#NU$LL%LL^"
+    },
+    "RA": {
+        "host":"localhost",
+        "port": 222,
+        "serverCrt": "/sgx/release/sgxsdk/SampleCode/SGX101_sample_code-master/RemoteAttestation/server.crt",
+        "serverKey": "/sgx/release/sgxsdk/SampleCode/SGX101_sample_code-master/RemoteAttestation/signca.pem",
+        "spid": "4BE2BAED4E56F15C3E1A741294BA535F",
+        "subscriptionKey":"14c8bcbf6e414ab1b6de6fcd5cd8df1b",
+        "iasUrl": "https://api.trustedservices.intel.com/sgx/attestation/v4/",
+        "iasKey": "/home/fan/linux-sgx-remoteattestation/server.key",
+        "iasCrt": "server.crt"
+
+    }
+}

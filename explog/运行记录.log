@@ -1,0 +1,261 @@
+############################
+# nocrypt
+############################
+SQL statistics:
+    queries performed:
+        read:                            104928
+        write:                           108693
+        other:                           16036
+        total:                           229657                         9.2.4:
+    transactions:                        8017   (133.60 per sec.)        6013   (100.21 per sec.)
+    queries:                             229657 (3827.23 per sec.)      172760 (2879.06 per sec.)
+    ignored errors:                      44     (0.73 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.0040s
+    total number of events:              8017
+
+Latency (ms):
+         min:                                    0.24
+         avg:                                    7.48                     9.98
+         max:                                   38.75
+         95th percentile:                       20.74
+         sum:                                59985.10
+###############################
+# 纯软件
+#############################
+prepare 18min
+SQL statistics:
+    queries performed:
+        read:                            8759
+        write:                           9084
+        other:                           1344
+        total:                           19187  
+    transactions:                        671    (11.11 per sec.)         559    (9.30 per sec.)
+    queries:                             19187  (317.82 per sec.)        15732  (261.68 per sec.)
+    ignored errors:                      2      (0.03 per sec.)          
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.3698s
+    total number of events:              671
+
+Latency (ms):
+         min:                                    3.07
+         avg:                                   89.96                   107.54
+         max:                                  989.94
+         95th percentile:                      219.36
+         sum:                                60365.77
+
+
+UDF:ORE
+硬件平均运行时间=0.00us, 累计平均时间=0.00us
+软件平均运行时间=12.73us, 累计平均时间=12.99us
+硬件总计运行时间=0.00s
+软件总计运行时间=22.75s
+总计执行次数：SOFT=1787464，HARD=0
+
+UDF:同态加
+硬件平均运行时间=0.00us, 累计平均时间=0.00us
+软件平均运行时间=27.39us, 累计平均时间=33.01us
+硬件总计运行时间=0.00s
+软件总计运行时间=0.09s
+总计执行次数：SOFT=3440，HARD=0
+
+HE LRU 命中率: -100.00%
+
+
+SAHE Decryption:
+AvgTime=7.84us, maxTime=25.00us, CntTime=0.0015s, Called=190
+
+SQL Decryption:
+AvgTime=8.66us, maxTime=342.00us, CntTime=0.1266s, Called=14612
+
+SMHE Encryption:
+AvgTime=20.77us, maxTime=124.00us, CntTime=0.5719s, Called=27532
+
+SMHE Decryption:
+AvgTime=0.34us, maxTime=14.00us, CntTime=0.0078s, Called=22631
+
+SQL AST To String:
+AvgTime=54.94us, maxTime=828.00us, CntTime=0.8027s, Called=14612
+
+ORE Encryption:
+AvgTime=52.13us, maxTime=305.00us, CntTime=1.5826s, Called=30362
+
+SAHE Encryption:
+AvgTime=1.64us, maxTime=33.00us, CntTime=0.0509s, Called=30972
+
+SQL Encryption:
+AvgTime=219.36us, maxTime=4586.00us, CntTime=3.4510s, Called=15732
+
+AES Encryption:
+AvgTime=0.25us, maxTime=27.00us, CntTime=0.0142s, Called=55956
+
+SQL Parse:
+AvgTime=9.46us, maxTime=68.00us, CntTime=0.1488s, Called=15732
+
+{name:"SAHE Decryption", value : 7.84 },
+{name:"SQL Decryption", value : 8.66 },
+{name:"SMHE Encryption", value : 20.77 },
+{name:"SMHE Decryption", value : 0.34 },
+{name:"SQL AST To String", value : 54.94 },
+{name:"ORE Encryption", value : 52.13 },
+{name:"SAHE Encryption", value : 1.64 },
+{name:"SQL Encryption", value : 219.36 },
+{name:"AES Encryption", value : 0.25 },
+{name:"SQL Parse", value : 9.46 },
+
+###########################################
+# ORE
+##########################################
+SQL statistics:
+    queries performed:
+        read:                            10613
+        write:                           11025
+        other:                           1686
+        total:                           23324
+    transactions:                        842    (14.01 per sec.)
+    queries:                             23324  (388.03 per sec.)
+    ignored errors:                      4      (0.07 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.1076s
+    total number of events:              842
+
+Latency (ms):
+         min:                                    3.31
+         avg:                                   71.38
+         max:                                 5154.00
+         95th percentile:                      158.63
+         sum:                                60103.71
+
+
+ORE_AES Encryption: 
+AvgTime=0.16us, maxTime=21.00us, CntTime=0.0074s, Called=44865
+
+SAHE Decryption: 
+AvgTime=6.83us, maxTime=45.00us, CntTime=0.0025s, Called=360
+
+SQL Decryption: 
+AvgTime=7.67us, maxTime=266.00us, CntTime=0.1706s, Called=22253
+
+SMHE Encryption: 
+AvgTime=19.33us, maxTime=112.00us, CntTime=0.7890s, Called=40822
+
+SMHE Decryption: 
+AvgTime=0.31us, maxTime=21.00us, CntTime=0.0108s, Called=34746
+
+SQL AST To String: 
+AvgTime=27.62us, maxTime=740.00us, CntTime=0.6146s, Called=22253
+
+SAHE Encryption: 
+AvgTime=1.36us, maxTime=44.00us, CntTime=0.0635s, Called=46782
+
+SQL Encryption: 
+AvgTime=109.38us, maxTime=2367.00us, CntTime=2.6220s, Called=23971
+
+AES Encryption: 
+AvgTime=0.18us, maxTime=21.00us, CntTime=0.0151s, Called=85537
+
+SQL Parse: 
+AvgTime=8.40us, maxTime=60.00us, CntTime=0.2013s, Called=23971
+
+
+UDF:ORE
+硬件平均运行时间=7.64us, 累计平均时间=7.25us 
+软件平均运行时间=0.00us, 累计平均时间=0.00us 
+硬件总计运行时间=17.79s
+软件总计运行时间=0.00s
+总计执行次数：SOFT=0，HARD=2329093
+
+UDF:同态加
+硬件平均运行时间=18.01us, 累计平均时间=20.09us 
+软件平均运行时间=129.54us, 累计平均时间=250.01us 
+硬件总计运行时间=0.11s
+软件总计运行时间=0.00s
+总计执行次数：SOFT=28，HARD=5932
+
+HE LRU 命中率: 90.19%
+
+
+##############################
+#   ORE Without ORE column
+##############################
+
+SQL statistics:
+    queries performed:
+        read:                            14503
+        write:                           14929
+        other:                           2278
+        total:                           31710
+    transactions:                        1138   (18.94 per sec.)
+    queries:                             31710  (527.63 per sec.)
+    ignored errors:                      3      (0.05 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          60.0975s
+    total number of events:              1138
+
+SAHE Decryption: 
+AvgTime=5.93us, maxTime=25.00us, CntTime=0.0023s, Called=393
+
+SQL Decryption: 
+AvgTime=7.41us, maxTime=228.00us, CntTime=0.2181s, Called=29432
+
+SMHE Encryption: 
+AvgTime=19.27us, maxTime=194.00us, CntTime=1.0631s, Called=55155
+
+SMHE Decryption: 
+AvgTime=0.38us, maxTime=15.00us, CntTime=0.0167s, Called=43509
+
+SQL AST To String: 
+AvgTime=31.27us, maxTime=515.00us, CntTime=0.9202s, Called=29432
+
+SAHE Encryption: 
+AvgTime=1.31us, maxTime=47.00us, CntTime=0.0794s, Called=60513
+
+SQL Encryption: 
+AvgTime=102.20us, maxTime=2851.00us, CntTime=3.2409s, Called=31710
+
+AES Encryption: 
+AvgTime=0.21us, maxTime=58.00us, CntTime=0.0385s, Called=179561
+
+SQL Parse: 
+AvgTime=7.82us, maxTime=244.00us, CntTime=0.2479s, Called=31710
+
+{name:"SAHE Decryption", value : 5.93 },
+{name:"SQL Decryption", value : 7.41 },
+{name:"SMHE Encryption", value : 19.27 },
+{name:"SMHE Decryption", value : 0.38 },
+{name:"SQL AST To String", value : 31.27 },
+{name:"SAHE Encryption", value : 1.31 },
+{name:"SQL Encryption", value : 102.20 },
+{name:"AES Encryption", value : 0.21 },
+{name:"SQL Parse", value : 7.82 },
+
+UDF:ORE
+硬件平均运行时间=8.83us, 累计平均时间=7.75us 
+软件平均运行时间=0.00us, 累计平均时间=0.00us 
+硬件总计运行时间=0.29s
+软件总计运行时间=0.00s
+总计执行次数：SOFT=0，HARD=33034
+
+UDF:同态加
+硬件平均运行时间=227.00us, 累计平均时间=165.41us 
+软件平均运行时间=19.75us, 累计平均时间=39.03us 
+硬件总计运行时间=0.00s
+软件总计运行时间=0.11s
+总计执行次数：SOFT=5354，HARD=4
+
+HE LRU 命中率: 62.04%
+
+
+
+
+
+
+

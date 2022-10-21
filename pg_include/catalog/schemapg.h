@@ -1,0 +1,1 @@
+/root/tars/postgresql-9.2.4/src/backend/catalog/schemapg.h
