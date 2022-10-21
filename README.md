@@ -16,7 +16,7 @@ Within the system we present a micro-benchmarking test and self-adaptive mode sw
 
 **System Architecture (black components are specific to TEE-enabled mode)**:
 
-![image-20221020001640668](System Architecture.png)
+![image-20221020001640668](https://github.com/lihuixidian/Enc2DB/blob/main/System%20Architecture.png)
 
 The pipeline for answering a SQL query under the architecture is as follows: The data provider uploads plaintext data, and the client encrypts each column under one or more encryption schemes according to the expected operations, replacing the original column name with a random string for anonymization. The user enters a plaintext query, which is rewritten and sent to the server in the form of a ciphertext counterpart. The server implements the relevant operation logic for ciphertext calculation in advance, performs query and operation on the encrypted SQL, and returns the obtained encrypted result to the client. The client decrypts the received ciphertext to obtain the plaintext query result. The whole process is completely transparent to the user, and the server is unaware about the content of either the query or the result.
 
